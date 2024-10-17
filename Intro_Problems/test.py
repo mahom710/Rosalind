@@ -1,0 +1,1 @@
+out = [index for index, value in enumerate(temp) if value == index]
