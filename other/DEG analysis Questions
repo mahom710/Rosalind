@@ -1,0 +1,35 @@
+Questions
+Basic Data Exploration:
+
+Data Summary:
+
+Calculate the summary statistics (mean, median, min, max) for the logFC, pvalue, and FDR columns in both DataFrames.
+Check for any missing values in the DataFrames.
+Filtering Data:
+
+Filter the first DataFrame to include only genes with a logFC greater than 1.5 and an FDR less than 0.05. How many genes meet this criterion?
+Repeat the same filtering for the second DataFrame.
+Visualization:
+
+Create a histogram of the logFC values for both DataFrames. Compare their distributions.
+Plot the -log10(pvalue) against logFC for both DataFrames. Add a horizontal line at FDR = 0.05 to indicate significance.
+Common Genes:
+
+Identify and list the genes that are common between the two DataFrames.
+Fold Change Analysis:
+
+For the common genes, calculate the difference in logFC between the two DataFrames. Create a new DataFrame to store the results.
+Correlation Analysis:
+
+Calculate the Pearson correlation coefficient between the logFC values of the two DataFrames for the common genes.
+Significance Comparison:
+
+Compare the number of significantly differentially expressed genes (FDR < 0.05) between the two datasets. Which dataset has more significant DEGs?
+Exporting Results:
+
+Save the filtered DataFrame (from question 3) containing significantly upregulated genes (logFC > 0) to a new CSV file.
+Hypothesis Testing:
+
+Perform a t-test to determine if the logFC values from the two DataFrames are significantly different. What do you conclude?
+Bonus Challenge:
+Create a combined DataFrame that includes the Gene, logFC, pvalue, and FDR from both datasets. Include an additional column indicating which dataset the data came from (e.g., "Dataset 1" or "Dataset 2"). Use this combined DataFrame to visualize the logFC values across both datasets.
