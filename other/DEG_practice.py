@@ -1,5 +1,4 @@
 import pandas as pd
-from numpy.core.numerictypes import generic
 from scipy.stats import spearmanr
 import os
 
